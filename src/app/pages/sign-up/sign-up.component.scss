@@ -1,0 +1,184 @@
+.main {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.main-tittle {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+.back-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.back-icon:focus {
+  animation: rubberBand;
+  animation-duration: 0.8s;
+}
+.login-form {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.login-fom__form-group-one {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.login-form__label {
+  font-size: 1.2rem;
+  transform: translateY(2px);
+  text-shadow: 2px 2px 5px black;
+}
+.login-form__input {
+  height: 40px;
+  border-radius: 60px;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-size: 1.1rem;
+  font-style: italic;
+  outline: none;
+  border: solid 3px transparent;
+  box-shadow: 2px 2px 5px black;
+}
+.login-form__input:focus {
+  animation-name: rubberBand;
+  animation-duration: 0.8s;
+  border: solid 3px red;
+}
+.login-form__input::placeholder {
+  font-size: 1.1rem;
+  font-weight: lighter;
+  font-style: italic;
+}
+.login-fom__form-group-two {
+  width: 80%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.form-group__remember-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-form__checkbox {
+  width: 15px;
+  height: 15px;
+  box-shadow: 2px 2px 5px black;
+}
+
+.form-group__remember-me label {
+  text-shadow: 2px 2px 5px black;
+}
+
+.form-button {
+  position: relative;
+  background-color: transparent;
+  color: white;
+  box-shadow: 2px 2px 5px black;
+  width: 180px;
+  border: solid 1px white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all;
+  overflow: hidden;
+}
+.form-button p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.form-button:focus {
+  animation-name: rubberBand;
+  animation-duration: 0.8s;
+  box-shadow: 1px 1px 20px greenyellow;
+  background-color: greenyellow;
+  color: black;
+}
+
+.form-anotation {
+  text-shadow: 2px 2px 5px black;
+}
+
+.link-to:focus {
+  animation-name: rubberBand;
+  animation-duration: 0.8s;
+  color: greenyellow;
+  text-shadow: 1px 1px 10px greenyellow;
+}
+
+.transition {
+  animation-duration: 0.8s;
+  animation-name: jackInTheBox;
+}
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes jackInTheBox {
+  0% {
+    -webkit-transform: scale(0.1);
+    -webkit-transform-origin: center bottom;
+    opacity: 0;
+    transform: scale(0.1);
+    transform-origin: center bottom;
+  }
+
+  to {
+    -webkit-transform: scale(1);
+    opacity: 1;
+    transform: scale(1);
+  }
+}

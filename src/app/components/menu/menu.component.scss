@@ -1,0 +1,149 @@
+.icon {
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  margin: 0;
+  padding: 0;
+  animation: rubberBand;
+  animation-duration: 0.8s;
+  animation-play-state: paused;
+  animation-iteration-count: infinite;
+}
+.slider{
+  height: 0;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  overflow: hidden;
+  width: 100%;
+  
+}
+.sliderShow{
+  display:flex;
+  height: 96%;
+}
+.hideMenu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(60, 58, 58, 0.99);
+  width: 100%;
+  height: 96%;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.8s all;
+  transform: translateY(-100%);
+}
+.showMenu {
+  position: absolute;
+  left: 0;
+  background-color: rgba(60, 58, 58, 0.99);
+  width: 100%;
+  height: 96%;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.8s all;
+  transform: translateY(0%);
+}
+
+.menuContainer__items {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.item__p {
+  display: flex;
+  width: 85%;
+  height: 100%;
+  margin-top: 0;
+  padding: 0;
+  padding-left: 20px;
+  align-items: center;
+}
+.item-to-animate {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.item-to-animate:focus{
+  animation-duration: 0.8s;
+  animation-name: rubberBand;
+  color: greenyellow;
+  text-shadow: 1px 1px 10px greenyellow;
+}
+
+.nav-icon {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  width: 15%;
+  justify-content: center;
+}
+.logout-nav-icon{
+  transform: translateX(-4px);
+}
+.menuFooter {
+  height: 40%;
+}
+.collapse-icon {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  right: 0px;
+  bottom: 0px;
+  height: 50px;
+  width: 50px;
+  opacity: 0;
+  transition: 1.2s all;
+}
+
+.collapse-icon-show {
+  display: flex;
+  transition: 1.2s all;
+  opacity: 1;
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}

@@ -1,0 +1,51 @@
+<div class="main transition" tabindex="0">
+    <div class="profile-container">
+        <p class="profile-tittle" for="mail"><b>usuario@usuario.com</b></p>
+        <div class="profile-image-container">
+            <picture>
+                <img class="profile-avatar" src="{{ avatar }}" alt="avatar" />
+            </picture>
+            <div class="photoEditIcon-container" tabindex="0">
+                <img src="{{photoEditIcon}}" alt="">
+            </div>
+        </div>
+        <p class="profile-name" for="mail">
+            <b>Usuario</b><span>&nbsp;&nbsp;</span>Apellidos
+        </p>
+
+        <div id="profileMenu" class="profileMenu">
+            <div class="profileMenuContainer__items">
+                <div class="item-to-animate" tabindex="0">
+                    <div class="item__p item-to-animate__sub">
+                        <p>Modificar datos</p>
+                    </div>
+                    <div class="option-icons item-to-animate__sub">
+                        <img src="{{ pencilIcon }}" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="profileMenuContainer__items">
+                <div class="item-to-animate" tabindex="0">
+                    <div class="item__p item-to-animate__sub">
+                        <p>Cerrar sesión</p>
+                    </div>
+                    <div class="option-icons item-to-animate__sub logout-icon">
+                        <img src="{{ logoutIcon }}" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="profileMenuContainer__items">
+                <div class="item-to-animate item-to-animate__sub" tabindex="0">
+                    <div class="item__p">
+                        <p>Eliminar la cuenta</p>
+                    </div>
+                    <div class="option-icons item-to-animate__sub">
+                        <img src="{{ trashIcon }}" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <app-footer></app-footer>
+    <app-menu></app-menu>

@@ -1,0 +1,144 @@
+.profile-tittle {
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 5px black;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  height: 5%;
+}
+.profile-image-container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+  width: 100%;
+}
+.profile-avatar {
+  width: 11rem;
+  height: 11rem;
+  object-fit: cover;
+  border: solid 2px white;
+  border-radius: 100%;
+}
+
+.photoEditIcon-container {
+  position: absolute;
+  top: 15rem;
+  left: 15rem;
+  opacity: 1;
+  animation-name: appear;
+  animation-duration: 1.5s;
+}
+
+.photoEditIcon-container img {
+  height: 48px;
+  width: 48px;
+}
+.photoEditIcon-container:focus {
+  animation-name: rubberBand;
+  animation-duration: 0.8s;
+}
+
+.profile-name {
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 5px black;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5%;
+}
+.profileMenu {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.8s all;
+}
+
+.profileMenuContainer__items {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 4rem;
+}
+.profileMenuContainer__items:first-child {
+  border-top: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+.item__p {
+  display: flex;
+  width: 85%;
+  height: 100%;
+  margin-top: 0;
+  padding: 0;
+  padding-left: 20px;
+  align-items: center;
+}
+.item-to-animate {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.item-to-animate:focus {
+  animation-duration: 0.8s;
+  animation-name: rubberBand;
+  color: greenyellow;
+  text-shadow: 1px 1px 10px greenyellow;
+}
+
+.option-icons {
+  display: flex;
+  align-items: center;
+  min-height: 100%;
+  width: 15%;
+  padding-right: 5px;
+  justify-content: center;
+}
+.logout-icon {
+  transform: translateX(-4px);
+}
+.transition {
+  animation-duration: 0.8s;
+  animation-name: jackInTheBox;
+}
+@keyframes jackInTheBox {
+  0% {
+    -webkit-transform: scale(0.1);
+    -webkit-transform-origin: center bottom;
+    opacity: 0;
+    transform-origin: center bottom;
+  }
+
+  to {
+    -webkit-transform: scale(1);
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

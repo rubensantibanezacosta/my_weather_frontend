@@ -1,0 +1,47 @@
+<app-header></app-header>
+<div class="cities-container transition">
+
+    <form class="search-form" #searchForm="ngForm" autocomplete="off">
+        <div class="search-form__form-group-one">
+            <label class="search-form__label" for="add" autocomplete="off">Añadir ciudad</label>
+            <div class="inputContainer">
+                <input class="search-form__input" type="text" name="add" id="add" placeholder="Introduce tu ciudad..."
+                tabindex="0">
+                <div class="searchIcon">
+                    <img src="{{searchIcon}}" alt="{{searchIcon}}">
+                </div>
+            </div>   
+        </div>
+        <p class="search-form__label">Mis Ciudades</p>
+    </form>
+    <div id="citiesMenu" class="citiesMenu">
+        <div class="citiesMenuContainer__items">
+            <div class="item-to-animate" tabindex="0">
+                <div class="item__p item-to-animate__sub">
+                    <h4>Las Palmas <span class="text-muted">Gran Canaria, España</span></h4>
+                </div>
+                <div class="option-icons item-to-animate__sub">
+                    <img src="{{xIcon}}" alt="" />
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="autocompleteMenu" class="autocompleteMenu">
+        <div class="citiesMenuContainer__items">
+            <div class="item-to-animate" tabindex="0">
+                <div class="item__p item-to-animate__sub">
+                    <h4>Las Palmas <span class="text-muted">Gran Canaria, España</span></h4>
+                </div>
+                <div class="option-icons item-to-animate__sub">
+                    <img src="{{plusIconCircle}}" alt="" />
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+        
+<app-footer></app-footer>
+
+<app-menu></app-menu>

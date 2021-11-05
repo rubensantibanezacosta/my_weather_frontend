@@ -1,0 +1,29 @@
+
+<div class="main transition" tabindex="0">
+    <h3 class="main-tittle">INICIO DE SESIÓN</h3>
+    <form class="login-form" #userForm="ngForm">
+        <div class="login-fom__form-group-one">
+            <label class="login-form__label" for="mail">Email</label>
+        <input class="login-form__input" type="mail" name="mail" id="mail" placeholder="Introduce tu email..." tabindex="0">
+        <label class="login-form__label" for="password">Contraseña</label>
+        <input class="login-form__input"type="password" name="password" id="password" placeholder="Introduce tu contraseña..." tabindex="0">
+        </div>
+        
+        <div class="login-fom__form-group-two">
+            <div class="form-group__remember-me">
+                <input class="login-form__checkbox" type="checkbox" name="checkbox" id="checkbox" ><label for="checkbox">Recordarme</label>
+            </div>
+        </div>
+        <button class="form-button" type="submit">
+            <div class="form-button__animation"></div>
+            <p>Iniciar Sesión</p>
+        </button>
+        <div class="form-anotation">
+            <div class="link-to" id="link-to-signin" (click)= "navigateTo('/signup', $event.target)" tabindex="0">
+                <span>¿No tienes cuenta? </span><span><u><b>Regístrate</b></u></span>
+            </div> 
+        </div>
+    </form>
+</div>
+<app-footer></app-footer>
+    
