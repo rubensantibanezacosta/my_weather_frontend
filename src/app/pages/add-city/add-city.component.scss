@@ -42,13 +42,12 @@
 .searchIcon {
   position: absolute;
   height: 100%;
-  right: 0.2rem;
+  right: 4%;
   bottom: 0;
   display: flex;
   align-items: center;
   height: 100%;
   border-radius: 100%;
-  background-color: white;
 }
 .searchIcon img {
   width: 24px;
@@ -71,7 +70,6 @@
   overflow-x: hidden;
   color: white;
   transition: 0.8s all;
-  display:none;
 }
 .autocompleteMenu{
     width: 100%;
@@ -122,6 +120,17 @@
   animation-name: rubberBand;
   color: greenyellow;
   text-shadow: 1px 1px 10px greenyellow;
+}
+.item-to-animate_remove {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.item-to-animate_remove:focus {
+  animation-duration: 0.8s;
+  animation-name: rubberBand;
+  color: red;
+  text-shadow: 1px 1px 10px red;
 }
 
 .option-icons {

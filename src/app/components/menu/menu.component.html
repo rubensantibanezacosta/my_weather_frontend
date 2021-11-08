@@ -5,7 +5,7 @@
 </div>
 <div id="slider" class="slider">
     <div id="menu" class="hideMenu">
-        <div class="menuContainer__items">
+        <div class="menuContainer__items" (click)="navigateTo('/home')">
             <div class="item-to-animate" tabindex="0">
                 <div class="item__p item-to-animate__sub">
                     <p>Vista principal</p>
@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="menuContainer__items" (click)="navigateTo('/addcity')">
-            <div class="item-to-animate" tabindex="0">
+            <div class="item-to-animate " tabindex="0">
                 <div class="item__p item-to-animate__sub">
                     <p>Añadir ciudad</p>
                 </div>
@@ -26,8 +26,8 @@
             </div>
         </div>
         <div class="menuContainer__items" (click)="navigateTo('/profile')">
-            <div class="item-to-animate item-to-animate__sub" tabindex="0">
-                <div class="item__p">
+            <div class="item-to-animate " tabindex="0">
+                <div class="item__p item-to-animate__sub">
                     <p>Cuenta de usuario</p>
                 </div>
                 <div class="nav-icon item-to-animate__sub">
@@ -35,7 +35,7 @@
                 </div>
             </div>
         </div>
-        <div class="menuContainer__items item-to-animate__sub" (click)="navigateTo('/signin')">
+        <div class="menuContainer__items" (click)="navigateTo('/signin')">
             <div class="item-to-animate" tabindex="0">
                 <div class="item__p item-to-animate__sub">
                     <p>Cerrar sesión</p>

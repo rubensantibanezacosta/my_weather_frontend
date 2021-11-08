@@ -20,7 +20,7 @@
 }
 .sliderShow{
   display:flex;
-  height: 96%;
+  height: calc(100vh - 30px);
 }
 .hideMenu {
   position: absolute;
@@ -70,7 +70,7 @@
   height: 100%;
   margin-top: 0;
   padding: 0;
-  padding-left: 20px;
+  padding-left: 5%;
   align-items: center;
 }
 .item-to-animate {
@@ -81,8 +81,7 @@
 .item-to-animate:focus{
   animation-duration: 0.8s;
   animation-name: rubberBand;
-  color: greenyellow;
-  text-shadow: 1px 1px 10px greenyellow;
+  text-shadow: 1px 1px 10px white;
 }
 
 .nav-icon {

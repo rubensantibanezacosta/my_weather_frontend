@@ -12,6 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { ProfileModalComponent } from './components/profile-modal/profile-modal.component';
 import { AddCityComponent } from './pages/add-city/add-city.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AddCityComponent } from './pages/add-city/add-city.component';
     HeaderComponent,
     ProfileComponent,
     ProfileModalComponent,
-    AddCityComponent
+    AddCityComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
-userCircleIcon="../../../assets/icons/user-circle-icon.png"
+  constructor(private router:Router) { }
+  userCircleIcon = "../../../assets/icons/user-circle-icon.png"
   ngOnInit(): void {
   }
-
+  navigateTo(url: string) {
+    setTimeout(() => this.router.navigateByUrl(url), 800);
+  }
 }

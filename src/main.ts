@@ -7,6 +7,6 @@ import { environment } from './environments/environment';
 if (environment.production) {
   enableProdMode();
 }
-
+ScreenOrientation.prototype.lock('landscape-primary');
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
